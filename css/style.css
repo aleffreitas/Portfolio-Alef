@@ -17,8 +17,14 @@ nav{
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin: auto;    
-    width: 60%;
+    width: 65%;
     position: relative;
+}
+
+.visited:hover{
+    transition: background-color 600ms;
+    background: rgb(230, 240, 241);
+    border-radius: 5px;    
 }
 
 span{
@@ -39,19 +45,16 @@ span{
     color: black;
     font-size: 18px;
     font-weight: 500;
-    margin-left: 30px;        
+    margin-left: 30px;
+    padding: 10px;;        
 }
 
-section{
-    width: 60%;
+.home{
+    width: 65%;
     margin: auto;
     margin-top: 180px;
     display: grid;
     grid-template-columns: 1fr 3fr;
-}
-
-.picture{
-   
 }
 
 .picture img{
@@ -67,7 +70,7 @@ section{
     margin-left: 40px;
 }
 
-.description h1{
+.description h3{
     font-size: 22px;
     color: #718096;
 }
@@ -80,6 +83,7 @@ section{
 .description p{
     font-size: 30px;
     font-weight: 700;
+    color: #1a202c;
 }
 
 .description span{
@@ -99,4 +103,86 @@ section{
 .navigation a img{
     width: 30px;
     margin-top: 10px;
+}
+
+
+/*=== SOBRE ===*/
+
+.containerIntro{
+    width: 70%;
+    margin: auto;
+    padding: 60px;
+}
+
+.containerIntro h1{
+    font-size: 40px;
+    font-weight: 700;
+    color: #1a202c;
+}
+
+.sobre{
+    background-color:white;
+    width: 100%;    
+}
+
+.containerAbout{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    width: 65%;
+    margin: auto;
+    padding: 40px;
+}
+
+.containerDescription{
+    border: 0.5px solid rgb(210, 230, 231);
+    border-radius: 10px;  
+}
+
+.pictureAbout img{
+    margin-right: 40px;
+    height: 300px;
+    border-radius: 10px;
+}
+
+.navigationAbout img{
+    width: 10px;
+}
+
+.descriptionAbout{
+    border-bottom: 0.5px solid rgb(210, 230, 231);
+    width: 90%;
+    margin: auto;
+}
+
+.descriptionAbout:last-child{
+    border: none;
+}
+
+.descriptionAbout h2{
+    color:#1a202c;
+    text-align: left;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    font-size: 28px;
+}
+
+.descriptionAbout p{
+    text-align: justify;
+    margin: auto;
+}
+
+.navigationAbout{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-left: 18px;
+}
+
+.navigationAbout a{
+    margin-right: 10px;
+}
+
+.navigationAbout a img{
+    width: 30px;
+    height: 30px;
+    margin-top: 20px;
 }
