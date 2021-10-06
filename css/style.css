@@ -11,6 +11,9 @@ body{
 header{
     background: white;
     padding: 14px;
+    top: 0;
+    position: sticky;
+    border: 0.5px solid rgb(210, 230, 231);    
 }
 
 nav{
@@ -164,6 +167,10 @@ span{
     padding-top: 30px;
     padding-bottom: 20px;
     font-size: 28px;
+}
+
+.descriptionAbout img{
+    width: 30px;
 }
 
 .descriptionAbout p{
