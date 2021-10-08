@@ -208,6 +208,7 @@ span{
 .containerDescriptionPortfolio{
     display: grid;
     grid-template-columns: 1fr 2fr;
+    grid-auto-flow: dense;
     padding: 20px;
     width: 67%;
     margin: auto;
@@ -237,6 +238,33 @@ span{
 }
 
 .descriptionAboutPortfolio p{
-    text-align: justify;
+    text-align: left;
     margin: auto;
+}
+
+/* === REVERSE ===*/
+
+
+.containerDescriptionPortfolio.reverse{
+    grid-template-columns: 2fr 1fr;    
+}
+
+.descriptionAboutPortfolio.reverse{
+    padding-right: 20px;
+    grid-row: 1;
+    grid-column: 1;
+    padding-left: 0;
+}
+
+.descriptionAboutPortfolio.reverse h2{
+    text-align: right;
+}
+
+.descriptionAboutPortfolio.reverse p{
+    text-align: right;
+}
+
+.picturePage.reverse{
+    grid-column: 2;
+    margin-left: auto;
 }
