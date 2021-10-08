@@ -16,7 +16,7 @@ header{
     border: 0.5px solid rgb(210, 230, 231);    
 }
 
-nav{
+.navbar{
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin: auto;    
@@ -96,7 +96,7 @@ span{
 .navigation{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    margin-left: 0;
+    width: 54%;
 }
 
 .navigation a{
@@ -118,7 +118,7 @@ span{
 }
 
 .containerIntro h1{
-    font-size: 40px;
+    font-size: 50px;
     font-weight: 700;
     color: #1a202c;
 }
@@ -181,7 +181,7 @@ span{
 .navigationAbout{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    margin-left: 18px;
+    margin-left: 14px;
 }
 
 .navigationAbout a{
@@ -192,4 +192,51 @@ span{
     width: 30px;
     height: 30px;
     margin-top: 20px;
+}
+
+/*=== PORTFOLIO ===*/
+
+.portfolio{
+    background-color:white;
+    width: 100%;    
+}
+
+.containerAboutPortfolio{    
+    padding: 40px;
+}
+
+.containerDescriptionPortfolio{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    padding: 20px;
+    width: 67%;
+    margin: auto;
+    border: 0.5px solid rgb(210, 230, 231);
+    border-radius: 10px;  
+}
+
+.picturePage img{
+    height:250px;
+    width: 500px;
+    margin: auto;
+    border: 0.5px solid rgb(210, 230, 231);
+    border-radius: 10px;
+}
+
+
+.descriptionAboutPortfolio{
+    padding-left: 20px;
+    margin: auto;
+}
+
+.descriptionAboutPortfolio h2{
+    color:#1a202c;
+    text-align: left;
+    padding-bottom: 20px;
+    font-size: 28px;
+}
+
+.descriptionAboutPortfolio p{
+    text-align: justify;
+    margin: auto;
 }
