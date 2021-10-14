@@ -28,9 +28,14 @@ body{
 header{
     background: white;
     padding: 14px;
-    top: 0;
     position: sticky;
+    top: 0;
     border: 0.5px solid rgb(210, 230, 231);
+}
+
+.wrap-menu{
+    visibility: hidden;
+    display: none;
 }
 
 .logo a{
@@ -47,7 +52,6 @@ header{
     grid-template-columns: 1fr 4.5fr;
     margin: auto;    
     width: 65%;
-
 }
 
 .visited:hover{
@@ -77,6 +81,7 @@ span{
     margin-left: 30px;
     padding: 10px;;        
 }
+
 
 .home{
     width: 65%;
@@ -230,7 +235,7 @@ span{
 }
 
 .containerAboutPortfolio{
-    padding: 45px 40px 0 40px;
+    padding: 45px 40px 0 40px; 
 }
 
 .containerAboutPortfolio:last-child{
@@ -411,8 +416,127 @@ span{
     }
 }
 
-@media screen and (max-width:425px){
-    
-    
+@media screen and (max-width: 425px){
 
+    .options{
+        visibility: hidden;
+    }
+
+    .logo{
+        display: inline-block;
+    }
+
+    .navbar{
+        display: block;
+    }
+    
+    .home{
+        width: 100%;
+        margin: auto;
+        margin-top: 40px;
+        display: block;
+    }
+
+    .containerIntro{
+        width: 100%;
+        margin-left: -20px;
+        padding: 80px 0 80px 0;
+    }
+
+    .picture{
+        text-align: center;
+    }
+
+    .picture img{
+        height: 180px;
+        border-radius: 50%;
+        border: 2px solid #234E52;
+        padding: 6px;
+    
+    }
+
+    .description h1{
+        font-size: 35px;
+    }
+    
+    .center{
+        margin: auto;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .navigation{
+        width: 58%;
+        margin-left: 33px;
+    }
+    
+    .containerAbout{
+        display: block;
+        margin-right: 10px;
+    }
+
+    .pictureAbout{
+        text-align: center;
+    }
+
+    .pictureAbout img{
+        height: 350px;
+        border-radius: 10px;
+    }
+
+    .containerAbout{
+        padding: 30px;
+        padding-top: 45px;
+    }
+
+    .navigationAbout{
+        margin-left: 35px;
+        padding-bottom: 20px;
+    }
+
+    .containerDescriptionPortfolio{
+        display: block;
+    }
+
+    .picturePage img{
+        width: 100%;
+        height: 180px
+    }
+
+    .descriptionAboutPortfolio{
+        padding: 0;
+    }
+
+    .descriptionAboutPortfolio h2{
+        text-align: center;
+        font-size: 22px;
+        padding-top: 10px;
+    }
+
+    .descriptionAboutPortfolio p{
+        text-align: justify;
+        font-size: 14px;
+    }
+
+    .descriptionAboutPortfolio.reverse{
+        padding: 0;
+    }
+
+    .descriptionAboutPortfolio.reverse h2{
+        text-align: center;
+        font-size: 22px;
+        padding-top: 10px;
+    }
+
+    .descriptionAboutPortfolio.reverse p{
+        text-align: justify;
+        font-size: 14px;
+    }
+
+    /* === MENU MOBILE ===*/
+
+    #btn-mobile {
+    display: block;
+    }
 }
+
