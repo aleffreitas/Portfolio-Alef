@@ -31,6 +31,7 @@ header{
     position: sticky;
     top: 0;
     border: 0.5px solid rgb(210, 230, 231);
+    z-index: 1000;
 }
 
 .wrap-menu{
