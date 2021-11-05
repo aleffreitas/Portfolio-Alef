@@ -14,19 +14,19 @@
 
 </head>
 <body>
-    <header>
-        <nav class="navbar">
-            <div class="logo">
-                <h1><a href="./index.html">{ alef <span>freitas</span> }</a></h1>
-            </div>
-
-            <div class="options">
-                <a class="visited" href="./index.html">Home</a>
-                <a class="visited" href="./sobre.html">Sobre</a>
-                <a class="visited" href="./portfolio.html">Portfolio</a>
-                <a class="visited" href="./contato.html">Contato</a>
-            </div>
-        </nav>
+    <header id="header">
+        <h1><a id="logo" href="./index.html">{ alef <span>freitas</span> }</a></h1>
+            <nav id="nav">
+                <button id="btn-mobile">
+                    <span id="hamburger"></span>
+                </button>
+                <ul id="menu">
+                    <li><a class="visited" href="./index.html">Home</a></li>
+                    <li><a class="visited" href="./sobre.html">Sobre</a></li>
+                    <li><a class="visited" href="./portfolio.html">Portfolio</a></li>
+                    <li><a class="visited" href="./contato.html">Contato</a></li>
+                </ul>
+            </nav>
     </header>
     <div class="containerIntro">
         <div class="description">
@@ -42,7 +42,7 @@
                 </div>
                 <div class="descriptionAboutPortfolio">
                     <h2>Meu Portfolio</h2>
-                    <p>Sempre tive a vontade de fazer meu próprio portfolio. Decidi colocar em prática meus conhecimentos de <strong>HTML</strong> e <strong>CSS</strong> nesta página mesmo que você está navegando. Pretendo ainda inserir interações com o <strong>Javascript</strong> para deixar a página ainda mais legal</strong>.</p>
+                    <p>Sempre tive a vontade de fazer meu próprio portfolio. Decidi colocar em prática meus conhecimentos de <strong>HTML</strong> e <strong>CSS</strong> nesta página mesmo que você está navegando.</p>
                 </div>                
             </div>            
         </div>
@@ -71,5 +71,6 @@
 
     </section>
     
+    <script src="./js/script.js"></script>
 </body>
 </html>

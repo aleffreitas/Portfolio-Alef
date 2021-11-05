@@ -20,6 +20,51 @@
     }
 }
 
+/*--------------*/
+
+a{
+    text-decoration: none;
+    color:#1a202c;
+}
+
+
+#header {
+    box-sizing: border-box;
+    height: 70px;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#menu {
+    display: flex;
+    list-style: none;
+    gap: .5rem;
+}
+
+#menu a{
+    display: block;
+    padding: 0.8rem;
+}
+
+#btn-mobile {
+    display: none;
+}
+
+#nav {
+    margin-right: 16%;
+}
+
+header h1{
+    margin-left: 16%;
+}
+
+
+/*-----------------*/
+
+
+
 body{
     font-family: 'Poppins', sans-serif;
     background: rgb(224, 236, 238);
@@ -329,8 +374,12 @@ span{
 
 @media screen and (max-width:1024px){
     
-    .navbar{
-        width: 95%;
+    #nav {
+        margin-right: 2%;
+    }
+    
+    header h1{
+        margin-left: 2%;
     }
 
     .home{
@@ -365,10 +414,6 @@ span{
 
 @media screen and (max-width:768px){
     
-    .navbar{
-        grid-template-columns: 1fr 3fr;
-    }
-
     .home{
         margin-top: 120px;
     }
@@ -417,7 +462,79 @@ span{
     }
 }
 
-@media screen and (max-width: 425px){
+@media (max-width: 620px){
+
+    #menu{
+        display: block;
+        position: absolute;
+        width: 100%;
+        top: 70px;
+        right: 0px;
+        background-color: #fff;
+        height: 0px;
+        transition: .6s;
+        z-index: 1000;
+        visibility: hidden;        
+        overflow-y: hidden;
+        
+    }
+
+    #nav.active #menu {
+        height: calc(100vh - 70px);
+        visibility: visible;
+        overflow-y: auto; /* Se tiver mais itens no menu ele aumenta automaticamente de acordo com a quantidade de itens.*/
+    }
+
+    #menu a{
+        padding: 1rem 0;
+        margin: 0 1rem;
+        border-bottom: 2px solid rgb(224, 236, 238);
+    }
+
+    
+    #btn-mobile {
+        display: flex;
+        padding: .5rem 1rem;
+        font-size: 1rem;
+        border: none;
+        background: none;
+        cursor: pointer;
+        gap: .5rem;
+    }
+
+    #hamburger {
+        color: #1a202c;
+        border-top: 2px solid;
+        width: 20px;
+        display: block;
+    }
+
+    #hamburger::after, #hamburger::before{
+        content: " ";
+        display: block;
+        width: 20px;
+        height: 2px;
+        background-color: currentColor;
+        margin-top: 5px;
+        transition: .3s;
+        position: relative;
+    }
+
+    #nav.active #hamburger{
+        border-top-color: transparent;
+    }
+
+    #nav.active #hamburger::before{
+        transform: rotate(135deg);
+    }
+
+    #nav.active #hamburger::after{
+        transform: rotate(-135deg);
+        top: -7px;
+    }
+}
+
+@media screen and (max-width: 426px){
 
     .options{
         visibility: hidden;
