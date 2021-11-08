@@ -525,17 +525,17 @@ span{
     }
 
     .description{
-        margin: 0 auto;
+        margin: -12px auto;
     }
 
     .picture{
-        margin-top: -55px;
+        margin-top: -90px;
     }
 
     .picture img{
         margin-bottom: 25px;
-        height: 130px;
-        width: 130px;
+        height: 150px;
+        width: 150px;
     }
 
     .navigation{
