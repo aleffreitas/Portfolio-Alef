@@ -117,6 +117,7 @@ span{
 
 .description{
     margin-left: 40px;
+    margin-bottom: 30px;
 }
 
 .description h3{
@@ -533,6 +534,8 @@ span{
 
     .picture img{
         margin-bottom: 25px;
+        height: 130px;
+        width: 130px;
     }
 
     .navigation{
