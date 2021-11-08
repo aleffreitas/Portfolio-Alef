@@ -152,8 +152,9 @@ span{
 .navigation a img{
     width: 30px;
     margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
 }
-
 
 /*=== SOBRE ===*/
 
@@ -531,14 +532,13 @@ span{
     }
 
     .picture img{
-        height: 280px;
-        width: 280px;
         margin-bottom: 25px;
     }
 
     .navigation{
         width: 60%;
         margin-left: 68px;
+        margin-bottom: 20px;
     }
     
     .containerAbout{
