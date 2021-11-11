@@ -143,18 +143,22 @@ span{
 .navigation{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    width: 54%;
-}
-
-.navigation a{
-    margin-right: 30px;
+    justify-items: center;    
+    align-content: center;
+    width: 50%;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .navigation a img{
-    width: 30px;
-    margin-top: 10px;
-    margin-left: auto;
+    height: 30px;
+}
+
+.navigation a img:hover{
+    height: 35px;
+    transition: .3s;
     margin-right: auto;
+    margin-left: auto;
 }
 
 /*=== SOBRE ===*/
@@ -408,7 +412,7 @@ span{
     }
 
     .navigation{
-        width: 78%;
+        width: 75%;
     }
 
     .navigationAbout{
@@ -539,9 +543,7 @@ span{
     }
 
     .navigation{
-        width: 60%;
-        margin-left: 68px;
-        margin-bottom: 20px;
+        width: 100%;
     }
     
     .containerAbout{
@@ -610,11 +612,6 @@ span{
 }
 
 @media screen and (max-width: 376px){
-
-    .navigation{
-        width: 100%;
-        margin-left: 15px;
-    }
 
     .navigationAbout{
         margin-bottom: 30px;
